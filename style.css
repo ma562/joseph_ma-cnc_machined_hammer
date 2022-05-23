@@ -111,6 +111,39 @@
 	left: 10%;
 }
 
+.bottom_info {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: space-between;
+	top: 100px;
+	position: relative;
+}
+
+.tool_paths {
+	padding: 5px;
+	font-family: 'Poppins', sans-serif;
+	display: flex;
+	color: #00274c;
+	background: #e3e3e3;
+	width: 55%;
+	/*text-align: center;*/
+	border-radius: 15px;
+	position: relative;
+	left: 2%;
+}
+
+.tool_path_img {
+	right: 2%;
+	width: 40%;
+	position: relative;
+	display: flex;
+}
+
+.pic {
+	border-radius: 30px;
+}
+
 
 /*mobile version*/
 @media (max-width: 947px){
@@ -126,6 +159,17 @@
 	.information {
 		flex: 100%;
 		font-size: 17px;
+	}
+	.tool_paths {
+		flex: 100%;
+		left: 0%;
+		right: 0%;
+		margin-bottom: 10px;
+	}
+	.tool_path_img {
+		flex: 100%;
+		left: 0%;
+		right: 0%;
 	}
 }
 

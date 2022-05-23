@@ -60,5 +60,49 @@
 				</p>
 			</div>
 		</div>
+		<br>
+		<div class = "bottom_info">
+			<div class = "tool_paths">
+				<p>
+					<b>Toolpaths Design</b><br><br>
+					Linear patterns in the design included the letter A. If you observe the Avengers logo, you'll notice that the outer line seems to have a slighlty less steep slope than that of the inner line.<br><br>
+
+					From the code:<br>
+					“G00 Z.1				(Main letter)<br>
+					 <b>X.42 Y.64</b><br>
+					 G01 Z-.004 F2.<br>
+					 <b>X.25 Y.05</b> F11.<br>
+					 <b>X.35</b> <br>
+					 <b>X.40 Y.25</b>”<br><br>
+
+					 The slope of the outer line was (0.64-0.05)/(0.42-0.25) = 3.47 inches rise for every inch run
+					 On the other hand, the slope of the inner line was (0.25-0.05)/(0.4-0.35) = 4 inches rise for every inch run.<br><br>
+					 One of the more complicated parts were the round corners. The change in y must be equivalent to the change in x since the code for radial arc represents part of a circle (not an oval or ellipse).
+					 For example in the code written for letter ‘R’:
+					 <br><br>
+					 “(Letter R)<br>
+					  G00 Z.1<br>
+					  X1.93<br>
+					  G01 Z-.004 F2.<br>
+					  X2.03 <b>Y.53</b> F11.<br>
+					  <b>X2.18</b><br>
+					  <b>G02 X2.23 Y.48 R0.05 </b>F11.<br>
+					  G01 Z-.004 F2.<br>
+					  X2.2 Y.36 F11.”<br><br>
+
+					  With the initial point before the first round corner (top right) of letter R being at points (2.18, 0.53), I needed to ensure that the final points after the arc was reasonable which was found by trial and error. By increasing/ decreasing the radius, I was able to finalize and come up with a radius of 0.05. 
+					  Since I was making part of a circle and not a full circle, the change in X and Y just needs to be equal to the radius.<br><br>
+					  From the code above, we could see the change in Y: |0.53-0.48| = 0.05<br>
+					  And the change in X: |2.18-2.23| = 0.05.
+				</p>
+			</div>
+			<div class = "tool_path_img">
+				<img src = "images/toolpaths.png" class = "pic" width = "100%" alt = "">
+			</div>
+		</div>
+		<br>
+		<div class = "final_results">
+
+		</div>
 	</body>
 </html>
