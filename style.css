@@ -60,7 +60,6 @@
 	justify-content: space-between;
 	top: 100px;
 	position: relative;
-	/*background: green;*/
 }
 
 .vid1 {
@@ -151,18 +150,30 @@
 	justify-content: space-between;
 	top: 100px;
 	position: relative;
-	background: green;
 }
 
 .result_pic {
 	left: 2%;
-	width: 25%;
+	width: 30%;
 	position: relative;
 }
 
 .machinery {
-	width: 25%;
+	width: 31%;
 	position: relative;
+}
+
+.vid2 {
+	width: 34%;
+	background: red;	
+	right: 2%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	background: #00274c;
+	border-radius: 20px;
+	text-align: center;
 }
 
 
@@ -213,6 +224,12 @@
 	.information {
 		flex: 100%;
 		font-size: 15px;
+	}
+	.result_pic, .machinery, .vid2 {
+		flex: 100%;
+		margin-bottom: 10px;
+		right: 0%;
+		left: 0%;
 	}
 }
 @media (max-width: 500px) {
