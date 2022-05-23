@@ -89,6 +89,28 @@
 	margin-bottom: 10px;
 }
 
+.mid_info {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: space-between;
+	top: 100px;
+	position: relative;
+}
+
+.commands {
+	padding: 5px;
+	font-family: 'Poppins', sans-serif;
+	display: flex;
+	color: #00274c;
+	background: #e3e3e3;
+	width: 80%;
+	/*text-align: center;*/
+	border-radius: 15px;
+	position: relative;
+	left: 10%;
+}
+
 
 /*mobile version*/
 @media (max-width: 947px){
