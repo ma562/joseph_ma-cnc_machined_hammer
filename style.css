@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+.max-width{
+	max-width: 1300px;
+	padding: 0 80px;
+	margin: auto;
+}
+
+/*navbar*/
+.navbar {
+	z-index: 2;
+	position: fixed;
+	width: 100%;
+	padding: 15px 0;
+	font-family: 'Ubuntu', 'sans-serif;';
+	transition: all 0.3s ease;
+	background: #00274c;
+}
+
+.navbar.sticky {
+	padding: 15px 0;
+	background: #00274c;
+}
+
+.navbar .max-width{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.navbar .logo a{
+	color: #fff;
+	font-size: 35px;
+	font-weight: 600;
+}
+
+.navbar .menu li{
+	list-style: none;
+	display: inline-block;
+}
+
+.navbar .menu li a{
+	color: #fff;
+	font-size: 18px;
+	font-weight: 500;
+	margin-left: 25px;
+}
+
+.top_info {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: space-between;
+	top: 100px;
+	position: relative;
+	/*background: green;*/
+}
+
+.vid1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	left: 2%;
+	width: 40%;
+	background: #00274c;
+	border-radius: 20px;
+	text-align: center;
+}
+
+.information{
+	font-family: 'Poppins', sans-serif;
+	color: #00274c;
+	width: 55%;
+	margin-right: 20px;
+	text-align: justify;
+}
+
+.text{
+	font-size: 25px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+
+/*mobile version*/
+@media (max-width: 947px){
+/*	.top_info {
+		top: 110px;
+	}*/
+	.vid1 {
+		flex: 100%;
+		width: 90%;
+		left: 0%;
+
+	}
+	.information {
+		flex: 100%;
+		font-size: 17px;
+	}
+}
+
+
+@media (max-width: 690px) {
+	.vid1 {
+		flex: 100%;
+		width: 90%;
+		left: 0%;
+	}
+	.navbar .logo a{
+		color: #fff;
+		font-size: 22px;
+		font-weight: 600;
+	}
+	.navbar .menu li a{
+		font-size: 14px;
+
+	}
+	.information {
+		flex: 100%;
+		font-size: 15px;
+	}
+}
+@media (max-width: 500px) {
+	.top_info {
+		top: 80px;
+	}
+	.navbar .logo a{
+		color: #fff;
+		font-size: 20px;
+		font-weight: 600;
+	}
+	.navbar .menu li a{
+		font-size: 12px;
+
+	}
+	.vid1 {
+		flex: 100%;
+		width: 90%;
+		left: 0%;
+
+	}
+	.information {
+		flex: 100%;
+		font-size: 12px;
+	}
+	.text {
+		font-size: 18px;
+	}
+}
+
