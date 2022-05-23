@@ -144,6 +144,27 @@
 	border-radius: 30px;
 }
 
+.final_results {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: space-between;
+	top: 100px;
+	position: relative;
+	background: green;
+}
+
+.result_pic {
+	left: 2%;
+	width: 25%;
+	position: relative;
+}
+
+.machinery {
+	width: 25%;
+	position: relative;
+}
+
 
 /*mobile version*/
 @media (max-width: 947px){
