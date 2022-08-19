@@ -229,18 +229,26 @@
 		left: 0%;
 	}
 }
-@media (max-width: 500px) {
+
+@media (max-width: 750px) {
 	.top_info {
 		top: 80px;
 	}
+
 	.navbar .logo a{
 		color: #fff;
-		font-size: 20px;
+		font-size: 15px;
 		font-weight: 600;
 	}
 	.navbar .menu li a{
-		font-size: 12px;
+		font-size: 11px;
 
+	}
+}
+
+@media (max-width: 500px) {
+	.top_info {
+		top: 80px;
 	}
 	.vid1 {
 		flex: 100%;
